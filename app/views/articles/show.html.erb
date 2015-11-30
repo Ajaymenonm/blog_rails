@@ -1,6 +1,11 @@
 <h1>Title:<%= @article.title %></h1>
 <p><%= @article.body %></p>
 
+<br><br><br>
+<h3>Comments (<%= @article.comments.size %>)</h3>
+<%= render partial: 'articles/comment', collection: @article.comments %>
+
+<%= render partial: 'comments/form' %>
 <br><br><br><br><br><br><br>
 <%= link_to "<< Back", articles_path %>
 
