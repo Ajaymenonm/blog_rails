@@ -6,6 +6,10 @@
   <%= link_to tag.name, tag_path(tag) %>
   <% end %>
 </p>
+<p><% if @article.image.exists? %>
+      <%= image_tag @article.image.url(:medium) %><br/>
+  <% end %>
+  </p>
 <p><%= @article.body %></p>
 
 <br><br><br>
@@ -17,8 +21,10 @@
 <%= link_to "<< Back", articles_path %>
 
 <br>
+<%= link_to "Edit", edit_article_path(@article) %>
+
+<br>
 <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"}
 %>
 
-<br>
-<%= link_to "Edit", edit_article_path(@article) %>
+
