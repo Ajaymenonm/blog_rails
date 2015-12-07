@@ -28,7 +28,9 @@ gem 'pry'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem "paperclip"
+gem 'paperclip'
+
+gem 'sorcery'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
