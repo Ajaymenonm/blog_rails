@@ -6,5 +6,7 @@
 
 * rake db:migrate
 
-* install imagemagick:sudo apt-get install imagemagick
+* install imagemagick: sudo apt-get install imagemagick
+
+* https://github.com/dejan/rails_panel
 
